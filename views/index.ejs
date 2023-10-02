@@ -1,0 +1,26 @@
+<!-- rohan bin delowar (301283416)
+
+tha main file of the site -->
+
+<!-- html head -->
+<%- inculde partials/header.ejs %>
+
+<!-- Top nevigation menu bar -->
+<%- include partials/main_nav.ejs %>
+
+<!-- All the body link to display it will show  -->
+<!-- one at a time with condition -->
+<% if (title == "Home") { %> 
+    <%- include partials/home.ejs %>
+  <% } else if (title == "About Me") { %> 
+    <%- include partials/about.ejs %> 
+  <% } else if (title == "Projects") { %> 
+    <%- include partials/projects.ejs %> 
+  <% } else if (title == "Services") { %> 
+    <%- include partials/services.ejs %> 
+  <% } else if (title == "Contact Me") { %> 
+    <%- include partials/contact_me.ejs %>
+  <% } %> 
+
+  <!-- the footer  -->
+<% include partials/footer.ejs %>
